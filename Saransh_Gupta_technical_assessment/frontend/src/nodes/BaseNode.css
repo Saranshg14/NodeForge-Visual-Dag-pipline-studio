@@ -1,0 +1,136 @@
+/* BaseNode.css — shared node card styling, consumed by BaseNode.js */
+
+.vs-node {
+  width: 220px;
+  background: var(--bg-surface, #fffefa);
+  border: 1px solid var(--border, #e3ddd0);
+  border-left: 3px solid var(--gold, #a8763e);
+  border-radius: var(--radius, 8px);
+  box-shadow: var(--shadow, 0 2px 10px rgba(23, 24, 26, 0.08));
+  font-size: 13px;
+  overflow: visible;
+  color: var(--ink, #17181a);
+}
+
+.vs-node--input   { border-left-color: var(--c-input, #3d5a80); }
+.vs-node--llm     { border-left-color: var(--c-llm, #6b4c8a); }
+.vs-node--output  { border-left-color: var(--c-output, #3f6b4f); }
+.vs-node--text    { border-left-color: var(--c-text, #a8763e); }
+.vs-node--api     { border-left-color: var(--c-api, #1f6f78); }
+.vs-node--math    { border-left-color: var(--c-math, #8a4a63); }
+.vs-node--filter  { border-left-color: var(--c-filter, #5f7a2f); }
+.vs-node--note    { border-left-color: var(--c-note, #8a6d1f); }
+.vs-node--delay   { border-left-color: var(--c-delay, #55565c); }
+
+.vs-node__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 8px 9px 12px;
+  font-family: var(--font-mono, monospace);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-dim, #5b5b58);
+  border-bottom: 1px solid var(--border, #e3ddd0);
+}
+
+.vs-node__delete {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--ink-dim, #5b5b58);
+  font-family: var(--font-sans, sans-serif);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.vs-node__delete:hover {
+  background: rgba(168, 118, 62, 0.12);
+  color: var(--gold, #a8763e);
+}
+
+.vs-node--error {
+  padding: 12px;
+  font-size: 12px;
+  color: #a13d3d;
+  border-left-color: #a13d3d;
+}
+
+.vs-node__body {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vs-node__field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.vs-node__field-label {
+  color: var(--ink-dim, #5b5b58);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.vs-node__note {
+  margin: 0;
+  color: var(--ink-dim, #5b5b58);
+  font-size: 12px;
+}
+
+.vs-input {
+  background: #ffffff;
+  color: var(--ink, #17181a);
+  border: 1px solid var(--border-strong, #d8cfba);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vs-input:focus {
+  border-color: var(--gold, #a8763e);
+  box-shadow: 0 0 0 1px rgba(168, 118, 62, 0.25);
+}
+
+.vs-textarea {
+  width: 100%;
+  min-height: 60px;
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.vs-node--text {
+  width: max-content;
+  min-width: 220px;
+  max-width: 420px;
+}
+
+.react-flow__handle {
+  width: 14px;
+  height: 14px;
+  background: var(--ink, #17181a);
+  border: 2.5px solid var(--bg-surface, #fffefa);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.react-flow__handle:hover {
+  transform: scale(1.35);
+  background: #000000;
+}
