@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="vs-app">
       <header className="vs-header">
-        <span className="vs-header__mark">Vector<em>Shift</em></span>
+        <span className="vs-header__mark">Node<em>Forge</em></span>
       </header>
       <PipelineToolbar />
       <PipelineUI />

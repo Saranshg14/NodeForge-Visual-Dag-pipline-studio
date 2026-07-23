@@ -1,6 +1,4 @@
-# ==============================================================================
 # OS Files
-# ==============================================================================
 .DS_Store
 .DS_Store?
 ._*
@@ -11,97 +9,35 @@ Thumbs.db
 desktop.ini
 DS_Store
 
-# ==============================================================================
 # Editor / IDE Configurations
-# ==============================================================================
 .vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.claude/
 .idea/
 *.suo
-*.ntvs*
-*.njsproj
 *.sln
-*.swp
-*.swo
 
-# ==============================================================================
-# Python Backend Specifics
-# ==============================================================================
-# Byte-compiled / optimized / DLL files
+# Python & Virtual Environments
 __pycache__/
-**/__pycache__/
+/**/__pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual environments
 venv/
 .venv/
 env/
-.env
-*.env
-# Allow example environment files
-!*.env.example
-!*.env.example.*
-
-# Test & coverage
-htmlcov/
-.tox/
-.nosenv/
 .pytest_cache/
-.mypy_cache/
-.hypothesis/
-.poetry/
-.cargo/
-.ruff_cache/
-.spyderproject
-.pydevproject
 
-# Distribution & builds
-bin/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# ==============================================================================
-# Frontend & Node.js Specifics
-# ==============================================================================
+# Node & Dependencies
 node_modules/
-**/node_modules/
-/frontend/frontend/build/
-/frontend/frontend/dist/
-/frontend/frontend/coverage/
-/frontend/frontend/.next/
-/frontend/frontend/out/
+/**/node_modules/
+frontend/frontend/
+build/
+dist/
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Plug'n'Play
-.pnp
-.pnp.js
-
-# ==============================================================================
-# Workspace Archives / Backups
-# ==============================================================================
+# Archives, Assessment Artifacts & Documents
 *.zip
+*.pdf
+111.pdf
+*.docx
+Saransh_Gupta_technical_assessment/
+assessment_tasks.md
+implementation_guide.md
+improvement_plan.md

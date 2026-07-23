@@ -17,7 +17,7 @@ class ErrorBoundary extends Component {
 
   componentDidCatch(error, info) {
     // eslint-disable-next-line no-console
-    console.error('[VectorShift] render error caught by boundary:', error, info);
+    console.error('[NodeForge] render error caught by boundary:', error, info);
   }
 
   render() {
